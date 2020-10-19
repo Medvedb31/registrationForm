@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div data-wrapper class="wrapper">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox">
+                <span data-check class="check"  ></span>
+            </label>
+        </div>
+        
+        <form action="submit" name="form" class="form">
+            <h1 class="form__title">Registration</h1>
+
+            <div class="form__group">
+                <input name="name" required placeholder="Your name" type="text" class="form__input">
+                
+            </div>
+            <div class="form__group">
+                <input name="email" required placeholder="Email" type="email" class="form__input">
+                
+            </div>
+            <div class="form__group">
+                <input name="password" autocomplete="off" minlength = 8 required placeholder="Password" type="password" class="form__input">
+                
+            </div>
+            <button class="form__button">Submit</button>
+        </form>
+        
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
