@@ -11,7 +11,7 @@ formElem.onsubmit = async (e) => {
     e.preventDefault();
     console.log(formElem);
 
-    let response = await fetch('https://api.github.com', {
+    let response = await fetch('https://jsonplaceholder.typicode.com/posts', {
       method: 'POST',
       body: new FormData(formElem)
     });
